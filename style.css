@@ -1,9 +1,12 @@
 #grid-container {
-    width:256px;
     display: flex;
     flex-wrap: wrap;
 }
 
+.griditemclass {
+    display: flex;
+    color: black;
+}
 .griditemclass:hover {
     background-color: brown;
 }
