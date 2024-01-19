@@ -1,10 +1,20 @@
 const gridContainer = document.querySelector("#grid-container");
 
+let changeSizeButton = document.querySelector("#changesizebutton");
+changeSizeButton.addEventListener("click",() => gridChangeSize())
+
+function gridChangeSize() {
+    prompt("hello")
+}
+
+
+function gridMaker() {
 for (let i = 1; i <= 256; i++) {
     let griditemx = document.createElement("div");
-    griditemx.textContent ="x";
-    griditemx.classList.add('griditemclass')
+    griditemx.classList.add('griditemclass');
 
     gridContainer.append(griditemx);
 
 }
+}
+gridMaker()

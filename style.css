@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .griditemclass:hover {
     background-color: brown;
 }
