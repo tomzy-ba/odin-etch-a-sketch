@@ -1,12 +1,26 @@
-#grid-container {
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-.griditemclass {
+#grid-container {
+    margin: 0;
+    padding: 0;
+    width: 800px; /* dont change */
+    height: 800px;
     display: flex;
-    color: black;
+    flex-wrap:wrap;
 }
-.griditemclass:hover {
-    background-color: brown;
+.pixels:hover {
+    background-color: aliceblue;
+}
+.pixels {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    flex: 1 1 10%;
+    aspect-ratio: 1 / 1;
 }

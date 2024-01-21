@@ -1,25 +1,22 @@
 const gridContainer = document.querySelector("#grid-container");
 
 let changeSizeButton = document.querySelector("#changesizebutton");
-changeSizeButton.addEventListener("click",() => gridChangeSize())
+changeSizeButton.addEventListener("click",() => gridSizeChanger())
 
-function gridChangeSize() {
-    gridMaker(prompt("enter the number"))
-}
-
-
-function gridMaker(gridSize) {
-    gridSize = gridSize * gridSize;
+function gridSizeChanger() {
     gridContainer.innerHTML = "";
-    gridContainer.style.width = gridSize + "px";
-    gridContainer.style.height = gridSize + "px";
-for (let i = 1; i <= gridSize; i++) {
-    let griditemx = document.createElement("div");
-    griditemx.textContent =""
-    griditemx.classList.add('griditemclass');
-
-    gridContainer.append(griditemx);
-
+    gridMaker(prompt("how big"));
 }
+
+/* this function takes gridsize and makes creates gridSize** amount of divs,
+then sets width and height to gridSize, then appends them to gridContainer */
+function gridMaker (gridSize) {
+    for (i = 0; i < 100; i++) {
+        const pixel = document.createElement("div");
+        pixel.classList.add("pixels");
+        gridContainer.append(pixel);
+    }
 }
-gridMaker(16)
+gridMaker(10)
+
+
