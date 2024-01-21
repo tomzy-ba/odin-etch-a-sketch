@@ -1,9 +1,14 @@
 body {
+    background-color: aliceblue;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#changesizebutton {
+    margin: 20px;
 }
 
 #grid-container {
@@ -15,9 +20,6 @@ body {
     flex-wrap: wrap;
     border: 1px solid black;
 }
-.pixels:hover {
-    background-color: aliceblue;
-}
 .pixels {
-    background-color: red;
+    background-color: white;
 }
