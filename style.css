@@ -12,15 +12,12 @@ body {
     width: 800px; /* dont change */
     height: 800px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    border: 1px solid black;
 }
 .pixels:hover {
     background-color: aliceblue;
 }
 .pixels {
-    margin: 0;
-    padding: 0;
     background-color: red;
-    flex: 1 1 10%;
-    aspect-ratio: 1 / 1;
 }
