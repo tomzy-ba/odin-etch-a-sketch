@@ -19,11 +19,19 @@ function gridMaker (gridSize) {
         pixel.classList.add("pixels");        
         gridContainer.append(pixel);
 
-        pixel.addEventListener("mouseover", () => {
-            pixel.style.backgroundColor = brushColor;
+        pixel.addEventListener("mousedown", () => {
+            pixel.style.backgroundColor = randoBrushColor;
         })
     }
 }
-gridMaker(16)
+gridMaker(16);
 
+let randoBrushColor = "black"
+changeColorButton.addEventListener("click", () => {
+    randoBrushColor = "#" + Math.floor(Math.random() *1000000) + "";
+})
 
+// random color generator
+function randomColorGen() {
+    return "#" + Math.floor(Math.random() *1000000) + "";
+}
